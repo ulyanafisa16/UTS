@@ -113,6 +113,7 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+    
 }
 
 .social-media a {
@@ -126,7 +127,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3 rem 1.5rem 3rem 0;
+    margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 
@@ -262,7 +263,7 @@ span {
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5 ease;
+    transition: .5s ease;
 }
 .skills-box:hover .skills-layer {
     transform: translateY(0);
@@ -297,7 +298,7 @@ span {
     margin-bottom: 3rem;
 }
 .contact form {
-    max-width: 80rem;
+    max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -310,7 +311,7 @@ span {
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
-    padding: 1.5;
+    padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--main-color);
     background: var(--second-bg-color);
