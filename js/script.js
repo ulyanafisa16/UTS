@@ -6,10 +6,6 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
-
-
-
-
 /*=====scroll section active=====*/
 window.addEventListener("scroll", function() {
     var currentSection = "";
@@ -38,11 +34,30 @@ window.addEventListener("scroll", function() {
     /*=====remove toggle icon=====*/
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-
-
   });
 
   /*=====scroll reveal=====*/
+  ScrollReveal({
+    /*reset: true,*/
+    distance:'80px',
+    duration:2000,
+    delay:200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .education-container, .skills-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+/*=====typed js=====*/
+const typed = new Typed('.multiple-text',{
+    strings:['Mahasiswa IT', 'Anggota HIMA RPL', 'Dari Kelas RPL B'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
 
 
   
