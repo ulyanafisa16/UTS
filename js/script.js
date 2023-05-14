@@ -1,19 +1,52 @@
-/*=====scroll section active=====*/
-let section = document.querySelectorAll('section');
-let navlink = document.querySelectorAll('header nav a');
+/*===== toggle icon navbar =====*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-window.onscroll = () => {
-    section.fprEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navlink.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 };
+
+
+
+
+/*=====scroll section active=====*/
+window.addEventListener("scroll", function() {
+    var currentSection = "";
+    var sections = document.querySelectorAll("section");
+    var navLinks = document.querySelectorAll("nav a");
+  
+    sections.forEach(function(section) {
+      var sectionTop = section.offsetTop;
+      var sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 4) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+  
+    navLinks.forEach(function(navLink) {
+      navLink.classList.remove("active");
+      if (navLink.getAttribute("href").slice(1) === currentSection) {
+        navLink.classList.add("active");
+      }
+    });
+
+    /*=====Sticky navbar=====*/
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    /*=====remove toggle icon=====*/
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+
+
+  });
+
+  /*=====scroll reveal=====*/
+
+
+  
+  
+
+
+  
