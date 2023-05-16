@@ -27,6 +27,12 @@ body{
     color: var(--text-color);
 }
 
+.dark {
+    background-color:rgb(78, 67, 67);
+    color:var(--text-color);
+}
+
+
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -192,6 +198,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    grid-template-columns:repeat(2, 1fr);
 }
 
 .education-container .education-box {
@@ -207,6 +214,7 @@ span {
 .education-container .education-box:hover {
     border-color:var(--main-color) ;
     transform: scale(1.02);
+    
 }
 .education-box i{
     font-size: 7rem;

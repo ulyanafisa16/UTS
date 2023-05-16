@@ -1,3 +1,16 @@
+
+
+let nama = "Hello Welcome to my Portofolio";
+alert(nama);
+
+/*======mode======*/
+let body = document.body;
+function darkMode() {
+    console.log('dark mode di klik')
+    body.classList.toggle("dark");
+}
+
+
 /*===== toggle icon navbar =====*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -51,7 +64,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*=====typed js=====*/
 const typed = new Typed('.multiple-text',{
-    strings:['Mahasiswa IT', 'Anggota HIMA RPL', 'Dari Kelas RPL B'],
+    strings:['Mahasiswa IT', 'Blogger', 'Anggota Kelas RPL B'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
