@@ -45,8 +45,8 @@ window.addEventListener("scroll", function() {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     /*=====remove toggle icon=====*/
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
   });
 
   /*=====scroll reveal=====*/

@@ -168,7 +168,7 @@ span {
 }
 
 .about-img img {
-    width: 35vw;
+    width: 33vw;
 }
 
 .heading {
@@ -242,7 +242,7 @@ span {
     align-items: center;
     gap: 2.5rem;
 }
-.skills-container .skills-box{
+.skills-container .skills-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -408,11 +408,11 @@ span {
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
-        border-top: .1rem solid rgba(149, 146, 141, 0.1);
-        box-shadow: 0 .5rem 1rem rgba(221, 132, 15, 0.1);
+        border-top: .1rem solid rgba(30, 27, 23, 0.1);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     } 
-    .navbar .active{
+    .navbar .active {
         display: block;
     }
     .navbar a {
