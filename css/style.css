@@ -28,7 +28,7 @@ body{
 }
 
 .dark {
-    background-color:rgb(78, 67, 67);
+    background-color:#594545;
     color:var(--text-color);
 }
 
@@ -84,8 +84,10 @@ section{
 
 .home-img img {
     width: 35vw;
-    animation: floatImage 4s ease-in-out infinite;
+    animation: floatImage 4s ease-in-out infinite;   
 }
+
+
 
 @keyframes floatImage {
     0%{
