@@ -1,7 +1,8 @@
 
-
+/*======alert======*/
 let nama = "Hello Welcome to my Portofolio";
 alert(nama);
+
 
 /*======mode======*/
 let body = document.body;
@@ -19,6 +20,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
+
 /*=====scroll section active=====*/
 window.addEventListener("scroll", function() {
     var currentSection = "";
@@ -41,14 +43,13 @@ window.addEventListener("scroll", function() {
     });
 
     /*=====Sticky navbar=====*/
-     window.addEventListener('scroll', function() {
       var navbar = document.getElementById('navbar');
        if (window.scrollY > 0) {
         navbar.classList.add('sticky');
       } else {
         navbar.classList.remove('sticky');
       }
-    });
+    
 
     /*=====remove toggle icon=====*/
     menuIcon.classList.remove('bx-x');
@@ -66,8 +67,8 @@ window.addEventListener("scroll", function() {
   ScrollReveal({
     /*reset: true,*/
     distance:'80px',
-    duration:2000,
-    delay:200
+    duration: 2000,
+    delay: 200,
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
@@ -77,12 +78,13 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*=====typed js=====*/
 const typed = new Typed('.multiple-text',{
-    strings:['Mahasiswa IT', 'Blogger', 'Anggota Kelas RPL B'],
+    strings:['Mahasiswa IT', 'Blogger', 'Web Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
+
 
 
 

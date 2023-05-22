@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 *{
     margin:0;
@@ -145,6 +147,8 @@ span {
    box-shadow: 0 0 1rem var(--main-color);
 }
 
+
+
 .btn {
     display: inline-block;
     padding:  1rem 2.8rem;
@@ -199,7 +203,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns:repeat(2, 1fr);
 }
 
