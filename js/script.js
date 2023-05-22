@@ -78,18 +78,10 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*=====typed js=====*/
 const typed = new Typed('.multiple-text',{
-    strings:['Mahasiswa IT', 'Blogger', 'Web Developer'],
+    strings:['Software Engineering Students', 'Blogger', 'Web Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
 
-
-
-
-  
-  
-
-
-  
