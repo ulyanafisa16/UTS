@@ -85,3 +85,15 @@ const typed = new Typed('.multiple-text',{
     loop: true
 });
 
+// Add this script to your existing JavaScript or create a new JS file
+document.addEventListener('DOMContentLoaded', function () {
+  // Use ScrollReveal to animate the news section
+  ScrollReveal().reveal('.news', {
+      duration: 1000,
+      origin: 'left',
+      distance: '50px',
+      easing: 'ease-in-out',
+  });
+});
+
+

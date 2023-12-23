@@ -56,6 +56,43 @@ section{
     border-bottom: .1rem solid rgba(41, 31, 18, 0.1);
 }
 
+
+/* Add this section to your existing CSS or create a new CSS file */
+/* Add this section to your existing CSS or create a new CSS file and link it in the head section */
+.news {
+    background-color: #b88f8f;
+    padding: 40px 20px;
+    width: 30%; /* Set the width of the aside */
+    float: right; /* Float the aside to the right */
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-box {
+    background: var(--main-color);;
+    border: 1px solid hsl(43, 54%, 95%);
+    padding: 9px;
+    margin-bottom: 12px;
+}
+
+.news-box h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-box p {
+    color: #666;
+}
+
+.news-img img {
+    width: 11vw;    
+}
+
+
+
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -174,7 +211,7 @@ span {
 }
 
 .about-img img {
-    width: 33vw;
+    width: 30vw;
 }
 
 .heading {
@@ -191,7 +228,7 @@ span {
 }
 .about-content p{
   font-size: 1.6rem;  
-  margin: 2rem 0 3rem;
+  margin: 5rem 0 8rem;
 }
 
 .education h2 {
