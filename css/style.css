@@ -99,7 +99,33 @@ section{
     font-weight: 600;
     cursor: default;
 }
-.navbar a{
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 1.7rem;
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: flex-end; /* Mengatur agar elemen berada di sebelah kanan */
+    transition: .3s;
+  }
+  
+  ul.navbar li a {
+    margin-left: 1rem; /* Sesuaikan spasi antar elemen jika diperlukan */
+    color: var(--text-color);
+  }
+  ul.navbar li {
+    float: right;
+    margin-left: 4rem; /* Sesuaikan spasi antar elemen jika diperlukan */
+  }
+   ul.navbar li a:hover,
+   ul.navbar li a.active {
+    color: var(--main-color);
+} 
+  
+  
+/* .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -108,7 +134,7 @@ section{
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
-}
+} */
 
 #menu-icon {
     font-size: 3.6rem;
