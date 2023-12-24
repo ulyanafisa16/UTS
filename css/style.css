@@ -108,12 +108,13 @@ ul.navbar {
     font-size: 1.7rem;
     display: flex; /* Menggunakan Flexbox */
     justify-content: flex-end; /* Mengatur agar elemen berada di sebelah kanan */
-    transition: .3s;
+
   }
   
   ul.navbar li a {
     margin-left: 1rem; /* Sesuaikan spasi antar elemen jika diperlukan */
     color: var(--text-color);
+    transition: .3s;
   }
   ul.navbar li {
     float: right;
